@@ -1,21 +1,21 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 using namespace std;
 void main() {
 	setlocale(LC_ALL, "");
 	
 	const int n = 10;
-	cout << "Âåäèòå äåñÿòü ýëåìåíòîâ ìàññèâà öåëûõ ÷èñåë:" << endl;
+	cout << "Ð’ÐµÐ´Ð¸Ñ‚Ðµ Ð´ÐµÑÑÑ‚ÑŒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð° Ñ†ÐµÐ»Ñ‹Ñ… Ñ‡Ð¸ÑÐµÐ»:" << endl;
 	int arr[n];
 	for (int i = 0; i < n; i++) {
-		cout << i <<"-é ýëåìåíò: " << endl;
+		cout << i <<"-Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚: " << endl;
 		cin >> arr[i];
 	}
-	cout << endl << "Èñõîäíûé ìàññèâ â ïðÿìîì ïîðÿäêå:" << endl;
+	cout << endl << "Ð˜ÑÑ…Ð¾Ð´Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð² Ð² Ð¿Ñ€ÑÐ¼Ð¾Ð¼ Ð¿Ð¾Ñ€ÑÐ´ÐºÐµ:" << endl;
 	for (int i = 0; i < n; i++) {
 		cout << arr[i] << "\t";
 	}
-	cout << endl << endl << "Èñõîäíûé ìàññèâ â îáðàòíîì ïîðÿäêå:" << endl;
+	cout << endl << endl << "Ð˜ÑÑ…Ð¾Ð´Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð² Ð² Ð¾Ð±Ñ€Ð°Ñ‚Ð½Ð¾Ð¼ Ð¿Ð¾Ñ€ÑÐ´ÐºÐµ:" << endl;
 	for (int i = n - 1; i >= 0; i--) {
 		cout << arr[i] << "\t";
 	}
@@ -26,8 +26,8 @@ void main() {
 		amount += arr[i];
 		average_amount = amount / n;
 	}
-	cout << endl << endl << "Ñóììà ýëåìåíòîâ ìàññèâà: " << amount << endl;
-	cout << endl << endl << "Ñðåäíåå àðèôìåòè÷åñêîå ýëåìåíòîâ ìàññèâà: " << average_amount << endl;
+	cout << endl << endl << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << amount << endl;
+	cout << endl << endl << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << average_amount << endl;
 
 	int min = arr[0];
 	int max = arr[0];
@@ -35,8 +35,8 @@ void main() {
 		if (min > arr[i]) min = arr[i];
 		if (max < arr[i]) max = arr[i];
 	}
-	cout << endl << endl << "Ìèíèìàëüíîå çíà÷åíèå â ìàññèâå: " << min << endl;
-	cout << endl << endl << "Ìàêñèìàëüíîå çíà÷åíèå â ìàññèâå: " << max << endl;
+	cout << endl << endl << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ: " << min << endl;
+	cout << endl << endl << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ: " << max << endl;
 }
 
 
