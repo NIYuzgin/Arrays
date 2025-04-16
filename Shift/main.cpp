@@ -1,17 +1,17 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 using namespace std;
 void main()
 {
 	setlocale(LC_ALL, "");
 
-	cout << endl << endl << "Ïðîåêò 'Shift'" << endl << endl;
+	cout << endl << endl << "ÐŸÑ€Ð¾ÐµÐºÑ‚ 'Shift'" << endl << endl;
 	const int size = 10;
 	int ar[size];
 	for (int i = 0; i < size; i++) {
 		ar[i] = i;
 	}
-	cout << endl << "Èñõîäíûé ìàññèâ:" << endl;
+	cout << endl << "Ð˜ÑÑ…Ð¾Ð´Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð²:" << endl;
 
 	for (int i = 0; i < size; i++) {
 		cout << ar[i] << "\t";
@@ -19,7 +19,7 @@ void main()
 	cout << endl << endl;
 
 	int m;
-	cout << endl << "Ââåäèòå êîëè÷åñòâî ýëåìåíòîâ äëÿ ñäâèãà âëåâî:" << endl;
+	cout << endl << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð´Ð»Ñ ÑÐ´Ð²Ð¸Ð³Ð° Ð²Ð»ÐµÐ²Ð¾:" << endl;
 	cin >> m;
 	for (int j = 0; j < m; j++) {
 		int temp = ar[0];
