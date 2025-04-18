@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 using namespace std;
 void main() {
@@ -6,7 +6,7 @@ void main() {
 
 	unsigned short int number;
 	unsigned short int temp;
-	cout << "Âåäèòå ÷èñëî â äèàïàçîíå îò 0 äî 65535:" << endl;
+	cout << "Ð’ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð² Ð´Ð¸Ð°Ð¿Ð°Ð·Ð¾Ð½Ðµ Ð¾Ñ‚ 0 Ð´Ð¾ 65535:" << endl;
 	cin >> number;
 
 	for (temp = 32768; temp > 0; temp = temp/2) {
@@ -28,7 +28,7 @@ void main() {
 		temp = temp / 16;
 	} 
 	
-	cout << endl << endl << "Øåñòíàäöàòèðè÷íîå ÷èñëî: " << endl;
+	cout << endl << endl << "Ð¨ÐµÑÑ‚Ð½Ð°Ð´Ñ†Ð°Ñ‚Ð¸Ñ€Ð¸Ñ‡Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾: " << endl;
 	for (int j = i - 1; j > 0; j--) {
 		cout << ar[j];
 	}
