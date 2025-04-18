@@ -24,8 +24,8 @@ void main() {
 	double average_amount = 0.0;
 	for (int i = 0; i < n; i++) {
 		amount += arr[i];
-		average_amount = amount / n;
 	}
+	average_amount = amount / n;
 	cout << endl << endl << "Сумма элементов массива: " << amount << endl;
 	cout << endl << endl << "Среднее арифметическое элементов массива: " << average_amount << endl;
 
