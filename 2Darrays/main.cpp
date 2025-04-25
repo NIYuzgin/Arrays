@@ -26,6 +26,30 @@ void main() {
 		}
 		cout << endl;
 	}
+
+	double amount = 0.0;
+	double average_amount = 0.0;
+
+	for (int i = 0; i < rows; i++) {
+		for (int j = 0; j < cols; j++) {
+			amount += arr[i][j];
+			average_amount = amount / (rows + cols);
+		}
+	}
+	cout << endl << endl << "Сумма элементов массива: " << amount << endl;
+	cout << endl << endl << "Среднее арифметическое элементов массива: " << average_amount << endl;
+
+	int min = arr[0][0];
+	int max = arr[0][0];
+
+	for (int i = 0; i < rows; i++) {
+		for (int j = 0; j < cols; j++) {
+			if (min > arr[i][j]) min = arr[i][j];
+			if (max < arr[i][j]) max = arr[i][j];
+		}
+	}
+	cout << endl << endl << "Минимальное значение в массиве: " << min << endl;
+	cout << endl << endl << "Максимальное значение в массиве: " << max << endl;
 }
 
 
