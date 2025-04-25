@@ -1,4 +1,8 @@
 #include <iostream>
+#include <stdlib.h>
+#include <time.h>
+
+
 
 using namespace std;
 void main() {
@@ -6,22 +10,24 @@ void main() {
 
 	cout << "2Darrays" << endl;
 
-	const int ROWS = 5;
-	const int COLS = 4;
-	int arr[ROWS][COLS] =
+	srand(time(NULL));
+	const int rows = 5;
+	const int cols = 4;
 
-	{
-		{ 1, 2, 3},
-		{ 4, 5, 6},
-		{ 7, 8, 9},
-	};
+	int minRand = 1, maxRand = 9;
 
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++) {
+	int arr[rows][cols];
 
+	for (int i = 0; i < rows; i++) {
+		for (int j = 0; j < cols; j++) {
+			
+			arr[i][j] = rand() % (maxRand - minRand) + minRand;
 			cout << arr[i][j] << "\t";
 		}
 		cout << endl;
 	}
 }
+
+
+
+
