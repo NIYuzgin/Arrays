@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <stdlib.h>
 #include <time.h>
 
@@ -36,8 +36,8 @@ void main() {
 			average_amount = amount / (rows + cols);
 		}
 	}
-	cout << endl << endl << "Ñóììà ýëåìåíòîâ ìàññèâà: " << amount << endl;
-	cout << endl << endl << "Ñðåäíåå àðèôìåòè÷åñêîå ýëåìåíòîâ ìàññèâà: " << average_amount << endl;
+	cout << endl << endl << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << amount << endl;
+	cout << endl << endl << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << average_amount << endl;
 
 	int min = arr[0][0];
 	int max = arr[0][0];
@@ -48,8 +48,8 @@ void main() {
 			if (max < arr[i][j]) max = arr[i][j];
 		}
 	}
-	cout << endl << endl << "Ìèíèìàëüíîå çíà÷åíèå â ìàññèâå: " << min << endl;
-	cout << endl << endl << "Ìàêñèìàëüíîå çíà÷åíèå â ìàññèâå: " << max << endl;
+	cout << endl << endl << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ: " << min << endl;
+	cout << endl << endl << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ: " << max << endl;
 }
 
 
