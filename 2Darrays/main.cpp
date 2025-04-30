@@ -10,6 +10,80 @@ void main() {
 
 	cout << "2Darrays" << endl;
 
+	const int rows = 5;
+	const int cols = 4;
+
+	int arr[rows][cols];
+		
+		/* = {{1, 2, 3},{4, 5, 6},{7, 8, 9},}*/
+	
+	// заполнение случайными числами:
+
+	for (int i = 0; i < rows; i++) {
+		for (int j = 0; j < cols; j++) {
+
+			arr[i][j] = rand()%100;
+
+
+			//cout << arr[i][j] << "\t";
+		}
+		//cout << endl;
+	}
+
+	// вывод исходного массива на экран:
+
+	for (int i = 0; i < rows; i++) {
+		for (int j = 0; j < cols; j++) {
+
+			cout << arr[i][j] << "\t";
+		}
+		cout << endl;
+	}
+
+	cout << endl;
+
+	// сортировка массива:
+
+	for (int i = 0; i < rows; i++) {
+		for (int j = 0; j < cols; j++) {
+
+			for (int k = i; k < rows; k++) {
+				//for (int l = k == i ? j + 1 : 0; l < cols; l++) {
+				
+				for (int l = k > i ? 0 : j + 1; l < cols; l++) {
+					
+					// arr[i][j] - выбранный элемент
+					// arr[k][l] - перебираемый элемент
+					if (arr[k][l] < arr[i][j]) {
+						int buffer = arr[i][j];
+						arr[i][j] = arr[k][l];
+						arr[k][l] = buffer;
+					}
+
+				}
+			}
+			
+		}
+	}
+
+//cout << arr[i][j] << "\t";
+//cout << endl;
+
+	// вывод отсортированного массива на экран:
+
+	for (int i = 0; i < rows; i++) {
+		for (int j = 0; j < cols; j++) {
+
+			cout << arr[i][j] << "\t";
+		}
+		cout << endl;
+	}
+
+	cout << endl;
+
+	/*
+	
+
 	srand(time(NULL));
 	const int rows = 5;
 	const int cols = 4;
@@ -50,6 +124,18 @@ void main() {
 	}
 	cout << endl << endl << "Минимальное значение в массиве: " << min << endl;
 	cout << endl << endl << "Максимальное значение в массиве: " << max << endl;
+*/
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
