@@ -20,8 +20,8 @@ void main()
 				
 				unique = true;
 				for (int k = 0; k <= i; k++) {
+					
 					//for (int l = 0; l < (k < i ? cols : j); l++) 
-
 					for (int l = 0; l < (k == i ? j : cols); l++) {
 						if (arr[i][j] == arr[k][l]) {
 							unique = false;
@@ -40,5 +40,4 @@ void main()
 		}
 		cout << endl;
 	}
-
 }
