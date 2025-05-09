@@ -10,7 +10,6 @@ void main() {
 
 	const int rows = 5;
 	const int cols = 4;
-
 	int arr[rows][cols];
 		
 	// заполнение случайными числами:
@@ -25,15 +24,57 @@ void main() {
 
 	for (int i = 0; i < rows; i++) {
 		for (int j = 0; j < cols; j++) {
-
 			cout << arr[i][j] << "\t";
 		}
 		cout << endl;
 	}
+	cout << endl;
 
+	int m;
+	cout << endl << "Введите количество элементов для сдвига:" << endl;
+	cin >> m;
+
+	for (int i = 0; i < m; i++) {
+	int temp = arr[0][0];
+		for (int i = 0; i < rows; i++) {
+			for (int j = 0; j < cols; j++) {
+				arr[i][j] = arr[i][j+1];
+			}
+		}
+	arr[rows-1][cols-1] = temp;
+	}
+
+	cout << endl << "Массив со сдвигов влево на " << m << " элементов влево" << endl;
+	for (int i = 0; i < rows; i++) {
+		for (int j = 0; j < cols; j++) {
+			cout << arr[i][j] << "\t";
+		}
+		cout << endl;
+	}
+	cout << endl;
+
+	for (int i = 0; i < m; i++) {
+		int temp = arr[rows - 1][cols - 1];
+		for (int i = rows - 1; i >= 0; i--) {
+			for (int j = cols - 1; j >= 0; j--) {
+				arr[i][j] = arr[i][j - 1];
+			}
+		}
+		arr[0][0] = temp;
+	}
+
+	cout << endl << "Массив со сдвигов вправо на " << m << " элементов вправо" << endl;
+	for (int i = 0; i < rows; i++) {
+		for (int j = 0; j < cols; j++) {
+			cout << arr[i][j] << "\t";
+		}
+		cout << endl;
+	}
 	cout << endl;
 
 	// сортировка массива:
+
+	cout << endl << "Отсортированный массив в порядке возрастания:" << endl;
 
 	for (int i = 0; i < rows; i++) {
 		for (int j = 0; j < cols; j++) {
